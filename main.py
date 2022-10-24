@@ -2,8 +2,10 @@
 num1 = list(map(int, input().split()))
 num2 = list(map(int, input().split()))
 
-# ******************************
-# Make your Code
-# ******************************
+if len(num2) < len(num1):
+    temp = num1
+    num1 = num2
+    num2 = temp
 
-# print (num3) 
+num3 = num1 + num2
+print (num3) 
